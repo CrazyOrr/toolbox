@@ -25,7 +25,7 @@ import Textarea from './Textarea.vue'
 import showdown from 'showdown'
 
 export default {
-  name: 'HtmlMdConverter',
+  name: 'MdHtmlConverter',
   components: {
     Textarea
   },
@@ -46,6 +46,9 @@ export default {
     htmlToMarkdown() {
       this.markdown = this.converter.makeMarkdown(this.html)
     },
+  },
+  metaInfo: {
+    title: 'Markdown/HTML Converter',
   }
 }
 </script>
