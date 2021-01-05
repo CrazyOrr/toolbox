@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <Navbar/>
-    <MdHtmlConverter/>
+    <div id="content-wrapper">
+      <MdHtmlConverter/>
+    </div>
     <Footer/>
   </div>
 </template>
@@ -27,5 +29,12 @@ export default {
 
 <style>
 #app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#content-wrapper {
+  flex: 1;
 }
 </style>
