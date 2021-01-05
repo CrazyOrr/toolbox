@@ -36,7 +36,7 @@ export default {
     placeholder: String,
     rows: {
       type: Number,
-      default: 28
+      default: 25
     },
   },
   data() {
